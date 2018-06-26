@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.genddl"
+		name="Generate DDL"
+		description="Generate DDL using Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.genddl.GenDDLPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.genddl.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.genddl.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.genddl.actionset1.GenDDLActionControl"
+					actionType="generalAction"
+					label="Generate DDL"
+					tooltip="Generate DDL using Open API"
+					style="normal"
+					icon="icons/ddlicon.png"
+					toolbarPath="com.vp.plugin.sample.genddl.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.genddl.actions.GenDDLActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
